@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+    top: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.image{
+    height: 80px;
+    margin: 20px;
+    margin-top: 30px;
+
+}
+
+nav > a{
+    text-decoration: none;
+    color: aqua;
+    /* color: black; */
+    margin: 10px;
+    border: 3px solid gray;
+    border-radius: 30px;
+    padding: 15px;
+    
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 40px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align:  center;
+    position: relative;
+}
+.image{
+    height: 160px;
+    border-radius: 30px;
+}
+div > h2{
+    position: absolute;
+}
+
+button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 25px;
+}  
