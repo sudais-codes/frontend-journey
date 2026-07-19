@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box{
+    /* width: 300px; */
+    border: 2px solid gray;
+    height: 20vh;
+    /* justify-content: end; */
+    text-align: center;
+
+}
+.box > img{
+    height: 80px;
+}
