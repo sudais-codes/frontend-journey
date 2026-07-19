@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: calc(100vh - 40px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+    grid-template-areas: 
+    "head head"
+    "hero hero"
+    "side artic"
+    "trend trend"
+    "foot foot"
+    ;
+}
+
+.container > div{
+    border: 3px solid blanchedalmond;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #D96840;
+}
+
+.head{
+    grid-area: head;
+}
+.hero{
+    grid-area: hero;
+}
+.trend{
+    grid-area: trend;
+}
+.foot{
+    grid-area: foot;
+}
+
