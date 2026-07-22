@@ -450,3 +450,251 @@
     font-weight: 500;
     text-align: left;             
 }
+
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 280px);
+        grid-template-areas:
+            "box1 box1"
+            "box2 box2"
+            "box3 box4"
+            "box4 box5"
+            "box6 box7"
+            "box7 box5"
+            "box8 box9"
+            "box10 box10";
+    }
+
+    .box1 {
+        padding: 40px;
+    }
+
+    .box4 {
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .box5 h2 {
+        font-size: 34px;
+    }
+
+    .box7 h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+            "box10";
+        gap: 15px;
+    }
+
+    .box {
+        border-radius: 15px;
+    }
+
+
+    .box1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+        gap: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .image1 {
+        width: 160px;
+    }
+
+
+    .box2 {
+        font-size: 26px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+
+    .box3 {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .keyboard-title {
+        font-size: 26px;
+    }
+
+    .box4 {
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 25px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .mac-image img {
+        max-width: 140px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+
+    .box5 {
+        padding: 35px 20px 45px 20px;
+    }
+
+    .box5 h2 {
+        font-size: 32px;
+    }
+
+    .box5 p {
+        max-width: 100%;
+    }
+
+ 
+    .box6 {
+        padding: 40px 25px;
+    }
+
+
+    .box7 {
+        padding: 25px 20px 0 20px;
+    }
+
+    .ipad-image {
+        max-width: 300px;
+    }
+
+
+    .box8 {
+        padding: 35px 20px;
+    }
+
+
+    .box9 {
+        padding: 35px 20px;
+    }
+
+    .box9 h2 {
+        font-size: 22px;
+    }
+
+
+    .box10 {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 25px;
+    }
+
+    .box10 .tv-image,
+    .box10 .tv-text {
+        width: 100%;
+    }
+
+    .box10 .tv-text h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        gap: 10px;
+    }
+
+    .box1,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10 {
+        padding: 30px 18px;
+    }
+
+    .box1 h2 {
+        font-size: 20px;
+    }
+
+    .box2 {
+        font-size: 20px;
+        padding: 30px 15px;
+    }
+
+    .keyboard-title {
+        font-size: 22px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .box5 h2 {
+        font-size: 26px;
+    }
+
+    .box5 p {
+        font-size: 14px;
+    }
+
+    .learn-more-btn {
+        padding: 12px 30px;
+        font-size: 13px;
+    }
+
+    .box6 h2 {
+        font-size: 22px;
+    }
+
+    .box7 h2 {
+        font-size: 22px;
+    }
+
+    .box7 .badge {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .box9 h2 {
+        font-size: 18px;
+    }
+
+    .box10 .tv-text h2 {
+        font-size: 20px;
+    }
+}
