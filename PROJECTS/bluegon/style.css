@@ -48,7 +48,6 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    /* right: 0; */
     height: 100vh;
     background-color: #2279BD;
     padding: 60px 0;
@@ -63,10 +62,32 @@ img {
     display: none;
 }
 
+.nav-toggle-checkbox {
+    display: none;
+}
+
+.hamburger-btn {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    color: #2279BD;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 200;
+}
+
 .main-content {
     width: 60%;
-    margin-left: 30%;
+    margin-left: 33%;
     padding-bottom: 60px;
+    /* background-color: black; */
 }
 
 .profile-section {
@@ -302,6 +323,9 @@ img {
     color: #4a4a4a;
 }
 
+
+/* === GALLERY === */
+
 .gallery-container input[type="radio"] {
     display: none;
 }
@@ -321,7 +345,7 @@ img {
     cursor: pointer;
     border-bottom: 2px solid transparent;
     padding-bottom: 3px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     text-transform: capitalize;
 }
 
@@ -340,90 +364,147 @@ img {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+
+/* item-1 = beach woman (tall left, spans 2 rows) */
+.gallery-item.item-1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+/* item-2 = sexy lady chair (top middle) */
+.gallery-item.item-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* item-3 = pretty girl (tall right, spans 2 rows) */
+.gallery-item.item-3 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+/* item-4 = escalator (bottom middle) */
+.gallery-item.item-4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* item-5 = feeling woman (bottom left) */
+.gallery-item.item-5 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+/* item-6 = bikini girl (bottom right) */
+.gallery-item.item-6 {
+    grid-column: 3;
+    grid-row: 3;
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    margin-bottom: 15px;
+    min-height: 200px;
+}
+
+.gallery-item.item-1,
+.gallery-item.item-3 {
+    min-height: 415px;
+}
+
+.gallery-figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     text-align: center;
     perspective: 50em;
 }
 
-.gallery-item img {
+.gallery-figure img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
 }
 
-.gallery-item::after {
-    background-color: #ffffff;
+/* white overlay that flips in */
+.gallery-figure::before {
+    background: #ffffff;
     position: absolute;
     content: "";
     display: block;
-    top: 20px; left: 20px; right: 20px; bottom: 20px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
     transition: all 0.4s ease-in-out;
     transform: rotateX(-90deg);
     transform-origin: 50% 50%;
     opacity: 0;
+    z-index: 1;
 }
 
-.gallery-item:hover::after {
-    transform: rotateX(0);
+.gallery-figure:hover::before {
+    transform: rotateX(0deg);
     opacity: 0.9;
 }
 
-.overlay {
+/* text that fades in on top of overlay */
+.gallery-figure figcaption {
     position: absolute;
     top: 50%;
-    left: 20px; right: 20px;
-    opacity: 0;
-    z-index: 1;
+    left: 20px;
+    right: 20px;
     transform: translateY(-50%);
-    transition: all 0.2s ease-out;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
 }
 
-.gallery-item:hover .overlay {
+.gallery-figure:hover figcaption {
     opacity: 1;
     transition-delay: 0.2s;
-    transform: translateY(-50%);
 }
 
-.overlay a {
+.gallery-figure figcaption a {
     text-decoration: none;
-    z-index: 1;
 }
 
-.overlay i {
-    position: relative !important;
+.gallery-figure figcaption i {
     font-size: 18px;
     background-color: #2279BD;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     display: inline-block;
-    text-align: center; 
-    line-height: 40px; 
-    border-radius: 5px; 
+    text-align: center;
+    line-height: 40px;
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    border-radius: 3px;
     transition: all 0.3s;
 }
 
-.overlay i:hover {
-    background-color: #1e1e1e;
+.gallery-figure figcaption i:hover {
+    background-color: #1a5e99;
 }
 
-.overlay h4 {
+.gallery-figure figcaption h4 {
     color: #232323;
-    font-size: 24px;
-    margin-top: 15px; 
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 6px;
 }
 
-.overlay span {
+.gallery-figure figcaption span {
     color: #7a7a7a;
-    font-size: 14px;
+    font-size: 13px;
     font-style: italic;
     display: block;
 }
@@ -432,7 +513,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
 }
 
 .form-row {
@@ -474,9 +554,166 @@ img {
 
 .contact-form .btn-primary {
     width: auto;
-
-
 }
+
 .contact-form .form-group:last-child {
     text-align: center;
+}
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .main-content {
+        width: 65%;
+        margin-left: 32%;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .gallery-item.item-1,
+    .gallery-item.item-2,
+    .gallery-item.item-3,
+    .gallery-item.item-4,
+    .gallery-item.item-5,
+    .gallery-item.item-6 {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        padding: 30px 20px;
+        transition: left 0.3s ease;
+        z-index: 150;
+    }
+
+    .nav-toggle-checkbox:checked ~ .sidebar {
+        left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 70px 20px 0;
+    }
+
+    .section {
+        min-height: auto;
+    }
+
+    .post-item,
+    .post-item.reverse {
+        flex-direction: column;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+.gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gallery-item.item-1,
+    .gallery-item.item-2,
+    .gallery-item.item-3,
+    .gallery-item.item-4,
+    .gallery-item.item-5,
+    .gallery-item.item-6 {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 180px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter-labels label {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item.item-1,
+    .gallery-item.item-2,
+    .gallery-item.item-3,
+    .gallery-item.item-4,
+    .gallery-item.item-5,
+    .gallery-item.item-6 {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 180px;
+    }
+
+    .profile-section img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .post-text h4 {
+        font-size: 22px;
+    }
+
+    .feature-card {
+        padding: 30px;
+    }
+
+    .feature-card .fa {
+        font-size: 50px;
+    }
+
+    .feature-card h4 {
+        font-size: 22px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-labels label {
+        margin: 0 6px;
+        font-size: 14px;
+    }
 }

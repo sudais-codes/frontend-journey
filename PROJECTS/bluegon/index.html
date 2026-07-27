@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLUEGON PROJECT</title>
@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="page-wrapper"> 
+<div id="page-wrapper"> 
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <label for="nav-toggle" class="hamburger-btn"><i class="fa fa-bars"></i></label>
+
         <aside class="sidebar">
             <div class="profile-section">
                 <img src="images/logo-image.jpg" alt="Logo">
@@ -27,11 +30,11 @@
             </nav>
 
             <div class="social-icons">
-                <a href="#">f</a>
-                <a href="#">t</a>
-                <a href="#">in</a>
-                <a href="#">d</a>
-                <a href="#">r</a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-rss"></i></a>
             </div>
 
             <footer class="sidebar-footer">
@@ -115,7 +118,6 @@
                     <p>Donec sit amet enim tempor nisl fermentum aliquam. In consectetur sapien eu nisi venenatis lobortis. Sed ullamcorper tristique elit nec facilisis.</p>
                 </div>
 
-
                 <div class="gallery-container">
                     <input type="radio" id="filter-all" name="gallery-filter" checked>
                     <input type="radio" id="filter-pretty" name="gallery-filter">
@@ -130,53 +132,65 @@
                     </div>
 
                     <div class="gallery-grid">
-                        <div class="gallery-item beach">
-                            <img src="images/woman-beach.jpg" alt="Woman Beach">
-                            <div class="overlay">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <h4>Girl One</h4>
-                                <span>woman at the beach</span>
-                            </div>
+                        <div class="gallery-item item-1 beach">
+                            <figure class="gallery-figure">
+                                <img src="images/woman-beach.jpg" alt="Woman Beach">
+                                <figcaption>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                    <h4>Girl One</h4>
+                                    <span>woman at the beach</span>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <div class="gallery-item sexy">
-                            <img src="images/woman-chair-sunshine.jpg" alt="Woman Chair">
-                            <div class="overlay">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <h4>Sexy Lady</h4>
-                                <span>there you go sexy girl</span>
-                            </div>
+                        <div class="gallery-item item-2 sexy">
+                            <figure class="gallery-figure">
+                                <img src="images/woman-chair-sunshine.jpg" alt="Woman Chair">
+                                <figcaption>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                    <h4>Sexy Lady</h4>
+                                    <span>there you go sexy girl</span>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <div class="gallery-item pretty">
-                            <img src="images/woman-pretty.jpg" alt="Woman Pretty">
-                            <div class="overlay">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <h4>Pretty Girl</h4>
-                                <span>red flowers white girl</span>
-                            </div>
+                        <div class="gallery-item item-3 pretty">
+                            <figure class="gallery-figure">
+                                <img src="images/woman-pretty.jpg" alt="Woman Pretty">
+                                <figcaption>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                    <h4>Pretty Girl</h4>
+                                    <span>red flowers white girl</span>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <div class="gallery-item pretty">
-                            <img src="images/escalator-blue.jpg" alt="Escalator">
-                            <div class="overlay">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <h4>Escalator Up</h4>
-                                <span>Blue architecture building</span>
-                            </div>
+                        <div class="gallery-item item-4 pretty">
+                            <figure class="gallery-figure">
+                                <img src="images/escalator-blue.jpg" alt="Escalator">
+                                <figcaption>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                    <h4>Escalator Up</h4>
+                                    <span>Blue architecture building</span>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <div class="gallery-item beach">
-                            <img src="images/woman-feeling.jpg" alt="Woman Feeling">
-                            <div class="overlay">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <h4>Her Feeling</h4>
-                                <span>Ut sollicitudin risus</span>
-                            </div>
+                        <div class="gallery-item item-5 beach">
+                            <figure class="gallery-figure">
+                                <img src="images/woman-feeling.jpg" alt="Woman Feeling">
+                                <figcaption>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                    <h4>Her Feeling</h4>
+                                    <span>Ut sollicitudin risus</span>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <div class="gallery-item sexy">
-                            <img src="images/woman-bikini.jpg" alt="Woman Bikini">
-                            <div class="overlay">
-                                <a href="#"><i class="fa fa-search"></i></a>
-                                <h4>Bikini Girl</h4>
-                                <span>Donec eget massa ante</span>
-                            </div>
+                        <div class="gallery-item item-6 sexy">
+                            <figure class="gallery-figure">
+                                <img src="images/woman-bikini.jpg" alt="Woman Bikini">
+                                <figcaption>
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                    <h4>Bikini Girl</h4>
+                                    <span>Donec eget massa ante</span>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -208,7 +222,6 @@
             </section>
         </main>
     </div>
-    
 
 </body>
 </html>
