@@ -9,6 +9,7 @@ const people = [
   { name: "Mariam", age: 19, city: "Quetta" },
   { name: "Hassan", age: 33, city: "Sialkot" },
   { name: "Fatima", age: 24, city: "Hyderabad" }
+  { name: "haresh", age: 14, city: "Lahore" }
 ];
 
 console.log(people.length); 
