@@ -8,7 +8,7 @@ const people = [
   { name: "Usman", age: 40, city: "Faisalabad" },
   { name: "Mariam", age: 19, city: "Quetta" },
   { name: "Hassan", age: 33, city: "Sialkot" },
-  { name: "Fatima", age: 24, city: "Hyderabad" }
+  { name: "Fatima", age: 24, city: "Hyderabad" },
   { name: "haresh", age: 14, city: "Lahore" }
 ];
 
