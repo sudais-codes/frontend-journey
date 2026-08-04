@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-image {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.navbar h3 {
+    color: white;
+    font-family: sans-serif;
+}
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin-right: 60px;
+    list-style: none;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+}
