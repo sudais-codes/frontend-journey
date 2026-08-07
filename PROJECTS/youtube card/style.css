@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+        background-color: black;
+        font-family: sans-serif;
+}
+.main-div {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 60px;
+    margin-top: 40px;
+    background-color: #1e1b4b;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    height: 85vh;
+}
+
+.background {
+    background-color: #2a2438;
+    background-image:
+        radial-gradient(circle at 75% 30%, rgba(236, 72, 153, 0.35), transparent 45%),
+        radial-gradient(circle at 30% 60%, rgba(139, 92, 246, 0.30), transparent 55%);
+}
+
+.imag{
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.heading {
+    font-family: sans-serif;
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+.logo-area{
+    display: flex;
+    justify-content:flex-start;
+    margin: 15px;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-image{
+        border-radius: 50%;
+  width: 40px; 
+  height: auto;
+
+}
+
+.Playlist{
+    font-size: small;
+    margin-left: 22px;
+}
+
+.best{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.btn{
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.side{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+        gap: 30px
+    ;
+}
+
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagee{
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
