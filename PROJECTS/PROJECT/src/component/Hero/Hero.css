@@ -1,0 +1,125 @@
+.main{
+    display: flex;
+}
+.text{
+    font-family: sans-serif;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+.text h2{
+    font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+    font-size: 74px;
+    color: #EDEDE8;
+}
+
+.text p{
+    font-family: 'Poppins Regular';
+    font-weight: 400;
+    font-size: 18px;
+    color: #B7C2B7;
+    line-height: 1.5;
+    width: 750px;
+}
+
+.btn{
+    color: white;
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid white ;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.alina-box {
+  position: absolute;
+  top: 550px;
+  left: 55px;
+  width: 260px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.alina-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  background: none;
+  
+}
+
+.alina-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: none;
+}
+
+.alina-name {
+  color: #F5F5F0;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 0 4px 0;
+  background: none;
+}
+
+.alina-stars {
+  color: #FFD700;
+  font-size: 13px;
+  letter-spacing: 5px;
+  background: none;
+}
+
+.alina-text {
+  color: #C9D1C9;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  background: none;
+}
+
+.hero-image{
+  margin-left: 100px;
+  
+}
+.hero-image img{
+  width: 330px;
+}
+
+.plant-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #C9D1C9;
+  margin: 20px 0 4px 0;
+  align-self: flex-start;
+}
+
+.plant-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: #EDEDE8;
+  margin: 0 0 16px 0;
+  align-self: flex-start;
+}
+
+.plant-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px 24px;
+  align-self: flex-start;
+}

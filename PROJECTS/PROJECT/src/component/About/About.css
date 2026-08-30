@@ -1,0 +1,27 @@
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+   
+    margin: auto;
+}
+
+.About-header{
+    margin: 23px;
+    color: #F5F5F0;
+    font-family: 'popins' , sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about-text{
+    margin: 32px;
+    color: #C9D4C9;
+    font-size: 16px;
+    font-family: 'popins' , sans-serif;
+    font-weight: 500;
+border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    padding: 20px;
+    border-radius: 20px;
+}

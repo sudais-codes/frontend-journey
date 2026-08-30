@@ -1,0 +1,54 @@
+.footer-Planto{
+    font-family: 'poppins' , sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 30px 35px;
+    color: #EDEDE8;
+}
+
+.footer{
+    display: flex;
+    gap: 34%;
+    margin: 0 50px 33px;
+}
+
+.Quick{
+    color: #EDEDE8;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.touch{
+    margin-left: 60px;
+}
+
+.touch ul li{
+    list-style: none;
+    line-height: 1.7;
+        font-family: 'poppins' , sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #C9D1C9;
+
+    
+}
+
+
+.get-touch{
+    color: #EDEDE8;
+        font-family: 'poppins' , sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 16px;
+}
